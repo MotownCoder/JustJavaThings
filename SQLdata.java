@@ -54,7 +54,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     Class.forName("mysql.jdbc.driver.OracleDriver").newInstance();
 
-    Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@printest11:3306:MYSQL", "yourName", "mypwd");
+    Connection conn = DriverManager.getConnection("jdbc:mysql:thin:@printest11:3306:MYSQL", "yourName", "mypwd");
 
     Statement stmt = conn.createStatement();
 
